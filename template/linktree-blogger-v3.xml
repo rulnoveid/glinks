@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+<b:if cond='data:view.isHomepage'>
+<title><data:blog.title.escaped/></title>
+</b:if>
+<!-- remove m=1 mobile -->
+<script type='text/javascript'>
+var uri=window.location.toString();if(uri.indexOf(&quot;?m=1&quot;,&quot;?m=1&quot;)&gt;0){var clean_uri=uri.substring(0,uri.indexOf(&quot;?m=1&quot;));window.history.replaceState({},document.title,clean_uri)}
+</script>
+<!-- Favicons -->
+<link href='https://cdn.inputekno.com/icon-inputekno/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://cdn.inputekno.com/icon-inputekno/apple-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'/>
+<link href='https://cdn.inputekno.com/icon-inputekno/apple-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'/>
+
+<!-- Warna untuk Chrome, Firefox OS, Opera dan Vivaldi -->
+<meta content='#fff' name='theme-color'/>
+<!-- Warna untuk Windows Phone -->
+<meta content='#fff' name='msapplication-navbutton-color'/>
+<!-- Warna untuk iOS Safari -->
+<meta content='#fff' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+
+<b:if cond='data:view.isLayoutMode'>
+<!--[ CSS Layout ]-->
+<b:template-skin><![CDATA[
+]]></b:template-skin>
+</b:if>
+
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM' rel='stylesheet'/>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css' rel='stylesheet'/>
+
+<!--[ CSS Style ]-->
+<b:skin version='1.3.0'><![CDATA[
+:root {
+--font-p:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+--font-z:1rem;
+--line-height:1.75;
+--background-b:var(--bs-body-color);
+--background-icon:#ededed;
+--font-size-i:40px;
+--t-opacity:1;
+}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;}
+body{font-family:var(--font-p);font-size:var(--font-z);line-height:var(--line-height);background:var(--background-b)}
+a{text-decoration:none}
+.container-fluid .container{max-width: 1200px;}
+/* Card Animation */
+.animationC{animation-duration: 1s;animation-fill-mode: both;-webkit-animation-duration: 1s;-webkit-animation-fill-mode: both}
+@keyframes fadeInUp {from {transform: translate3d(0,40px,0)} to {transform: translate3d(0,0,0);opacity: 1}}
+@-webkit-keyframes fadeInUp {from {transform: translate3d(0,40px,0)} to {transform: translate3d(0,0,0);opacity: 1}}
+.mainC {opacity: 0;animation-name: fadeInUp;-webkit-animation-name: fadeInUp;}
+.mainC:nth-child(3n+1){animation-delay:0.4s;}
+.mainC:nth-child(3n+2){animation-delay:0.6s;}
+.mainC:nth-child(3n+3){animation-delay:0.8s;}
+/* Style Card */
+.widget-content .main {padding:5% 2%;width:100%;display:grid;grid-auto-rows:auto;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));grid-gap: 1em;}
+.widget-content .card {--bs-card-border-color:transparent;background:var(--background-b);color:#f0f0f0;}
+.widget-content .card:hover {background: rgba(255, 255, 255, 0.12);border: 1px solid hsla(0, 0%, 87.8%, 0);transition: 0.4s ease-in-out all;}
+.widget-content .card, .card-body .icon{transition: 0.4s ease-in-out all;}
+.widget-content .card .card-body:hover .icon{transform: scale(1.05);}
+.widget-content .card-body .icon{background:var(--background-icon);width:100%;height:94px;border-radius:var(--bs-border-radius);display:flex;align-items:center;justify-content:center;color: inherit;}
+.widget-content .card-body .card-title{font-size:140%;text-align:center;margin-top:10px}
+.widget-content .card-body .icon:before{content:'\F470';font-family:'Bootstrap-icons', var(--font-p);font-size:var(--font-size-i);color:#211f1f}
+.widget-content .card-body .icon.Facebook{background:#3b5998}
+.widget-content .card-body .icon.Facebook:before{content:'\F344';color:#fff}
+.widget-content .card-body .icon.Twitter{background:#1D9BF0}
+.widget-content .card-body .icon.Twitter:before{content:'\F5EF';color:#fff}
+.widget-content .card-body .icon.Instagram{background:linear-gradient(45deg, #833ab4, #c13584, #e1306c, #fd1d1d);}
+.widget-content .card-body .icon.Instagram:before{content:'\F437';color:#fff}
+.widget-content .card-body .icon.YouTube{background:#FF0000}
+.widget-content .card-body .icon.YouTube:before{content:'\F62B';color:#fff}
+.widget-content .card-body .icon.Telegram{background:#27A7E7}
+.widget-content .card-body .icon.Telegram:before{content:'\F5B3';color:#fff}
+.widget-content .card-body .icon.Github{background:#ededed}
+.widget-content .card-body .icon.Github:before{content:'\F3ED';color:#211f1f}
+.widget-content .card-body .icon.Website{background:#211F1F}
+.widget-content .card-body .icon.Website:before{content:'\F7D7';color:#fff}
+.widget-content .card-body .icon.weChat{background:#7BB32E}
+.widget-content .card-body .icon.wechat:before{content:'\F829';color:#fff}
+.widget-content .card-body .icon.Linkedin{background:#fff}
+.widget-content .card-body .icon.Linkedin:before{content:'\F472';color:#0A66C2}
+.widget-content .card-body .icon.Dribbble{background:#E94C88}
+.widget-content .card-body .icon.Dribbble:before{content:'\F65F';color:#333333}
+.widget-content .card-body .icon.Discord{background:#5865F2}
+.widget-content .card-body .icon.Discord:before{content:'\F300';color:#fff}
+.widget-content .card-body .icon.Line{background:#00B900}
+.widget-content .card-body .icon.Line:before{content:'\F660';color:#fff}
+.widget-content .card-body .icon.Medium{background:#000000cc}
+.widget-content .card-body .icon.Medium:before{content:'\F661';color:#211f1f}
+.widget-content .card-body .icon.TikTok{background:linear-gradient(30deg, #25F4EE, #000000, #FE2C55);background-size:220% 320%}
+.widget-content .card-body .icon.TikTok:before{content:'\F6CC';color:#fff}
+.widget-content .card-body .icon.Paypal{background:#2997D8}
+.widget-content .card-body .icon.Paypal:before{content:'\F662';color:#fff}
+.widget-content .card-body .icon.Pinterest{background:#c8232c}
+.widget-content .card-body .icon.Pinterest:before{content:'\F663';color:#fff}
+.widget-content .card-body .icon.Twitch{background:#6441A4}
+.widget-content .card-body .icon.Twitch:before{content:'\F5EE';color:#fff}
+.widget-content .card-body .icon.Snapchat{background:#FFFC00}
+.widget-content .card-body .icon.Snapchat:before{content:'\F665';color:#211f1f}
+.widget-content .card-body .icon.Spotify{background:#1db954}
+.widget-content .card-body .icon.Spotify:before{content:'\F666';color:#fff}
+.widget-content .card-body .icon.Signal{background:#237f52}
+.widget-content .card-body .icon.Signal:before{content:'\F664';color:#fff}
+.widget-content .card-body .icon.Reddit{background:#FF4500}
+.widget-content .card-body .icon.Reddit:before{content:'\F650';color:#fff}
+.widget-content .card-body .icon.Quora{background:#B92B27}
+.widget-content .card-body .icon.Quora:before{content:'\F6AF';color:#fff}
+.widget-content .card-body .icon.Slack{background:#4A154B}
+.widget-content .card-body .icon.Slack:before{content:'\F565';color:#fff}
+.widget-content .card-body .icon.Playstore{background:#3089AC}
+.widget-content .card-body .icon.Playstore:before{content:'\F7F7';color:#fff}
+.widget-content .card-body .icon.Email{background:#BB001B}
+.widget-content .card-body .icon.Email:before{content:'\F47D';color:#fff}
+.widget-content .card-body .icon.Zoom:before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='22.472' width='100' viewBox='0 0 100 22.472'%3E%3Cpath d='M81.419 6.739c.382.659.507 1.41.549 2.253l.054 1.124v7.862l.056 1.126c.111 1.838 1.466 3.197 3.319 3.313l1.12.055V10.117l.055-1.124c.046-.834.17-1.599.558-2.263a4.49 4.49 0 0 1 7.775.014c.382.659.501 1.424.547 2.249l.055 1.121v7.866l.056 1.126c.116 1.848 1.461 3.207 3.319 3.313l1.12.055V8.994A8.99 8.99 0 0 0 91.014.003a8.966 8.966 0 0 0-6.742 3.045A8.978 8.978 0 0 0 77.529.001a8.9 8.9 0 0 0-5.033 1.544C71.621.568 69.662.001 68.538.001v22.471l1.124-.055c1.881-.124 3.24-1.446 3.313-3.313l.06-1.126v-7.861l.055-1.124c.047-.848.165-1.594.549-2.258a4.502 4.502 0 0 1 3.89-2.239 4.495 4.495 0 0 1 3.89 2.244zM4.494 22.418l1.124.054h16.853l-.055-1.121c-.152-1.848-1.461-3.197-3.314-3.318l-1.124-.055H7.867l13.48-13.485-.055-1.12C21.204 1.508 19.84.159 17.977.056l-1.124-.05L0 .001l.055 1.124C.203 2.955 1.53 4.333 3.368 4.44l1.126.055h10.111L1.125 17.98l.055 1.124c.111 1.852 1.448 3.194 3.314 3.313zM64.127 3.29a11.235 11.235 0 0 1 0 15.89 11.243 11.243 0 0 1-15.894 0c-4.388-4.388-4.388-11.503 0-15.89A11.229 11.229 0 0 1 56.173 0a11.237 11.237 0 0 1 7.954 3.292Zm-3.18 3.182a6.745 6.745 0 0 1 0 9.535 6.745 6.745 0 0 1-9.535 0 6.745 6.745 0 0 1 0-9.535 6.745 6.745 0 0 1 9.535 0zM32.591 0a11.229 11.229 0 0 1 7.94 3.292c4.389 4.386 4.389 11.503 0 15.889a11.243 11.243 0 0 1-15.894 0c-4.388-4.388-4.388-11.503 0-15.89A11.229 11.229 0 0 1 32.577 0Zm4.76 6.47a6.745 6.745 0 0 1 0 9.536 6.745 6.745 0 0 1-9.535 0 6.745 6.745 0 0 1 0-9.535 6.745 6.745 0 0 1 9.535 0z' style='fill:%232d8cff;fill-rule:evenodd;stroke-width:11.79773998'/%3E%3C/svg%3E")}
+/* Style Header */
+.HeaderC {margin: 30px auto;padding: 0 20px;width: 100%;color:var(--bs-body-bg)}
+.headerC .flexC{display:flex;align-items:center;padding:2%;gap:12px;line-height:1.3;overflow:hidden;}
+.headerC .flexC .caption h3{margin-bottom:0;font-size:1.25em;font-weight:700;color:#fff}
+.headerC .flexC .caption h3:after{content:'\F4B6';font-size:13px;color:#1d9aef;font-family:'Bootstrap-icons'}
+.headerC .flexC .caption p{opacity:0.75;margin-bottom:0}
+.headerC .flexC img{width:40px;height:40px;border-radius: 100%;}
+/* Style Footers */
+.FootElement {color: #fff;text-align: center;padding: 35px 0;border-top: 1px solid rgb(255 255 255 / 30%);}
+.FootElement a{color:inherit} .FootElement a:hover{color:var(--bs-indigo)}
+.FootElement .card-footer .buildCrd{opacity:0.3}
+]]></b:skin>
+
+&lt;/head&gt;&lt;!--</head>--&gt;
+<body>
+
+<main id='root'>
+<div class='container-fluid'>
+<div class='container'>
+
+<b:section id='Header Profile' maxwidgets='1' showaddelement='yes'>
+  <b:widget id='Image1' locked='false' title='InpuTekno' type='Image' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://cdn.inputekno.com/icon-inputekno/maskable-android-icon-512x512.png</b:widget-setting>
+      <b:widget-setting name='displayHeight'>150</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+      <b:widget-setting name='displayWidth'>150</b:widget-setting>
+      <b:widget-setting name='link'/>
+      <b:widget-setting name='caption'>Hi. Lets connect and be friends!</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <div class='HeaderC'>
+  <b:include name='content'/>
+  </div>
+</b:includable>
+    <b:includable id='content'>
+  <div class='widget-content flexC'>
+    <b:tag cond='data:link' expr:href='data:link' name='a'>
+      <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'>
+        <b:attr cond='data:sourceSet' expr:value='data:sourceSet' name='srcset'/>
+      </img>
+    </b:tag>
+	<b:if cond='data:caption'>
+      <span class='caption'>
+        
+        <b:include name='widget-title'/>
+        <p><data:caption/></p>
+      </span>
+    </b:if>
+  </div>
+</b:includable>
+  </b:widget>
+</b:section>
+
+<b:section id='main Linktree' showaddelement='yes'>
+  <b:widget id='LinkList1' locked='true' title='List Linktree' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='text-10'>Spotify</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='link-1'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-13'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-2'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-12'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-0'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-14'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-11'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-10'>url_profile</b:widget-setting>
+      <b:widget-setting name='text-9'>Pinterest</b:widget-setting>
+      <b:widget-setting name='link-9'>url_profile</b:widget-setting>
+      <b:widget-setting name='text-8'>TikTok</b:widget-setting>
+      <b:widget-setting name='link-7'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-8'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-5'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-6'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-3'>url_profile</b:widget-setting>
+      <b:widget-setting name='link-4'>url_profile</b:widget-setting>
+      <b:widget-setting name='text-1'>Twitter</b:widget-setting>
+      <b:widget-setting name='text-0'>Facebook</b:widget-setting>
+      <b:widget-setting name='text-3'>YouTube</b:widget-setting>
+      <b:widget-setting name='text-2'>Instagram</b:widget-setting>
+      <b:widget-setting name='text-5'>Telegram</b:widget-setting>
+      <b:widget-setting name='text-4'>Github</b:widget-setting>
+      <b:widget-setting name='text-7'>Linkedin</b:widget-setting>
+      <b:widget-setting name='text-6'>Website</b:widget-setting>
+      <b:widget-setting name='text-11'>Signal</b:widget-setting>
+      <b:widget-setting name='text-12'>Playstore</b:widget-setting>
+      <b:widget-setting name='text-13'>Email</b:widget-setting>
+      <b:widget-setting name='text-14'>Default Icon</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <b:include name='content'/>
+    </b:includable>
+    <b:includable id='content'>
+      <div class='widget-content'>
+        <div class='main'>
+          <b:loop values='data:links' var='link'>
+            <a class='mainC animationC' expr:href='data:link.target'>
+              <div class='card'>
+                <div class='card-body'>
+                  <div class='icon' expr:data-text='&quot;Logo &quot; +data:link.name'>
+                  <b:class expr:name='data:link.name'/>
+                  </div>
+                  <h2 class='card-title'><data:link.name/></h2>
+                </div>
+              </div>
+            </a>
+          </b:loop>
+        </div>
+      </div>
+    </b:includable>
+  </b:widget>
+</b:section>
+
+<footer class='FootElement'>
+  <div class='card-footer'>
+    <div class='fotCd'>
+      &#169; <span id='getYear'><b:if cond='data:view.url != data:view.url params { amp: &quot;1&quot; }'><script>/*<![CDATA[*/ var d = new Date(); var n = d.getFullYear(); document.getElementById('getYear').innerHTML = n; /*]]>*/</script><b:else/>2023</b:if></span> &#8231; <bdi><a expr:href='data:blog.homepageUrl.canonical'><data:blog.title/></a></bdi> . All rights reserved.
+    </div>
+    <div class='buildCrd'>
+      Made with <i class='bi bi-heart-fill'/> By <a href='https://www.inputekno.com/' id='itC' title='InpuTekno'>InpuTekno</a> | Build on Blogger &amp; Bootstrap
+    </div>
+  </div>
+</footer>
+
+</div>
+</div>
+</main>
+  
+<!-- Bootstrap 5.3 Js -->
+<script crossorigin='anonymous' integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz' src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'/>
+<script crossorigin='anonymous' integrity='sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=' src='https://code.jquery.com/jquery-3.7.0.min.js'/>
+<script type='text/javascript'>//<![CDATA[
+'use strict';function _0xab53(_0x2b4a4d,_0x393bb1){var _0x5a4605=_0xec64();return _0xab53=function(_0x47ae9c,_0x25cc7a){_0x47ae9c=_0x47ae9c-(-0x1778+-0x2415+-0xc0b*-0x5);var _0x425f60=_0x5a4605[_0x47ae9c];return _0x425f60;},_0xab53(_0x2b4a4d,_0x393bb1);}var _0x4aaa03=_0xab53;(function(_0x309aa9,_0x533d2c){var _0x16245a=_0xab53,_0x44a2a4=_0x309aa9();while(!![]){try{var _0x4f9ad5=parseInt(_0x16245a(0xca))/(-0x26cb+0x8a2+0x1e2a)*(parseInt(_0x16245a(0xc2))/(-0xac1*-0x1+0xb8d*0x1+-0x164c))+-parseInt(_0x16245a(0xb6))/(0x1bbb+0x101f+-0x2bd7)*(parseInt(_0x16245a(0xcf))/(-0x25e7+0xbf*-0x10+0x1*0x31db))+-parseInt(_0x16245a(0xc6))/(-0x4*0x53a+0x26db+-0xf*0x132)+parseInt(_0x16245a(0xcd))/(-0xd*0x25+-0x216*-0x4+-0x671)*(parseInt(_0x16245a(0xc5))/(0x19aa+-0x4b*-0x7+-0xdd8*0x2))+parseInt(_0x16245a(0xd4))/(0x1bed+-0xc23+0xfc2*-0x1)*(-parseInt(_0x16245a(0xe1))/(-0x349*0x7+0x3*0x745+0x139))+-parseInt(_0x16245a(0xc3))/(-0x5*0x455+-0x955+0xa58*0x3)+parseInt(_0x16245a(0xd7))/(-0x2*0xa19+-0x1f12+0x334f)*(parseInt(_0x16245a(0xaa))/(-0x11*0x1f9+-0x24d2*-0x1+-0x33d));if(_0x4f9ad5===_0x533d2c)break;else _0x44a2a4['push'](_0x44a2a4['shift']());}catch(_0x17782c){_0x44a2a4['push'](_0x44a2a4['shift']());}}}(_0xec64,-0x659a+0x2cb2b*0x2+-0x22d6d));$(document)[_0x4aaa03(0xb1)](function(){var _0x2afb06=_0x4aaa03,_0x2c1050={'UUORB':function(_0x2e29aa,_0x20e9eb){return _0x2e29aa(_0x20e9eb);},'mcJMf':function(_0x22d6aa,_0x2be440){return _0x22d6aa+_0x2be440;},'COTRC':_0x2afb06(0xe7),'iYqHZ':_0x2afb06(0xd1),'YWxWJ':function(_0x4d7979,_0x5c3853){return _0x4d7979==_0x5c3853;},'oMdFH':function(_0x4ec945,_0x14a042){return _0x4ec945(_0x14a042);},'RZtuw':_0x2afb06(0xd9)+_0x2afb06(0xdf)+_0x2afb06(0xb5)+_0x2afb06(0xd5)+_0x2afb06(0xd2)+_0x2afb06(0xde),'VMomW':_0x2afb06(0xdc),'IJLaE':_0x2afb06(0xbc)+_0x2afb06(0xb3),'LXBYF':_0x2afb06(0xcb)},_0x15f2d3,_0x38d5dc,_0x53258e;_0x15f2d3=window,_0x38d5dc=document,(_0x53258e=_0x2c1050[_0x2afb06(0xb8)]($,_0x2c1050[_0x2afb06(0xc0)]))[_0x2afb06(0xab)]?(_0x15f2d3[_0x2afb06(0xd8)]=function(_0x22d3b9){var _0x47b9a6=_0x2afb06;return/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/[_0x47b9a6(0xb2)](_0x22d3b9);},_0x15f2d3[_0x2afb06(0xce)]=function(_0x1a457a){var _0x8adeca=_0x2afb06;_0x38d5dc[_0x8adeca(0xe4)+_0x8adeca(0xe5)](_0x1a457a)[_0x8adeca(0xc4)][_0x8adeca(0xe6)][_0x8adeca(0xac)]='0';},_0x15f2d3[_0x2afb06(0xe0)]=function(_0x53c827,_0x458d83){var _0x50b49a=_0x2afb06;_0x458d83||(_0x458d83=location[_0x50b49a(0xdc)]);var _0x427fcb=_0x2c1050[_0x50b49a(0xbe)](RegExp,_0x2c1050[_0x50b49a(0xd0)](_0x2c1050[_0x50b49a(0xd0)](_0x2c1050[_0x50b49a(0xbf)],_0x53c827=_0x53c827[_0x50b49a(0xaf)](/[\[]/,'\x5c[')[_0x50b49a(0xaf)](/[\]]/,'\x5c]')),_0x2c1050[_0x50b49a(0xae)]))[_0x50b49a(0xb4)](_0x458d83);return _0x2c1050[_0x50b49a(0xdd)](null,_0x427fcb)?null:_0x427fcb[-0x3*-0x23b+-0x1e4d*0x1+-0xd*-0x1d1];},_0x53258e[_0x2afb06(0xe3)](_0x2c1050[_0x2afb06(0xc9)],_0x2c1050[_0x2afb06(0xbd)])[_0x2afb06(0xb0)](_0x2c1050[_0x2afb06(0xc1)])):location[_0x2afb06(0xdc)]=_0x2c1050[_0x2afb06(0xbd)];});function _0xec64(){var _0x2c1746=['96151cTbGPd','validurlit','footer.Foo','.FootEleme','target','href','YWxWJ','itC','tElement\x20>','_GET','937809aYzsIL','title','attr','querySelec','tor','style','[\x5c?&]','84WDvHcV','length','height','noopener','iYqHZ','replace','text','ready','test','tekno.com','exec','\x20.card-foo','27KdbLvh','display','oMdFH','_blank','appendChil','createElem','//www.inpu','IJLaE','UUORB','COTRC','RZtuw','LXBYF','2cUcTrE','443680eUOXKV','parentNode','154jJjxVj','125495DcpoEm','rel','none','VMomW','276949XrsjlD','InpuTekno','Power\x20By\x20I','60618bQACGb','sUp','84124DfrVpT','mcJMf','=([^&#]*)','ldCrd\x20>\x20a#','npuTekno','8MBhLWo','ter\x20>\x20.bui','ent'];_0xec64=function(){return _0x2c1746;};return _0xec64();}{let a=document[_0x4aaa03(0xbb)+_0x4aaa03(0xd6)]('a');a[_0x4aaa03(0xdc)]=_0x4aaa03(0xbc)+_0x4aaa03(0xb3),a[_0x4aaa03(0xdb)]=_0x4aaa03(0xb9),a[_0x4aaa03(0xb0)]=_0x4aaa03(0xcb),a[_0x4aaa03(0xc7)]=_0x4aaa03(0xad),a[_0x4aaa03(0xe2)]=_0x4aaa03(0xcc)+_0x4aaa03(0xd3),document[_0x4aaa03(0xe4)+_0x4aaa03(0xe5)](_0x4aaa03(0xda)+'nt')[_0x4aaa03(0xba)+'d'](a)[_0x4aaa03(0xe6)][_0x4aaa03(0xb7)]=_0x4aaa03(0xc8);}
+//]]></script>
+&lt;!--</body>--&gt;&lt;/body&gt;
+</html>
