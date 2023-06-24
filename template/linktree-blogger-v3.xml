@@ -61,7 +61,8 @@ a{text-decoration:none}
 .widget-content .card, .card-body .icon{transition: 0.4s ease-in-out all;}
 .widget-content .card .card-body:hover .icon{transform: scale(1.05);}
 .widget-content .card-body .icon{background:var(--background-icon);width:100%;height:94px;border-radius:var(--bs-border-radius);display:flex;align-items:center;justify-content:center;color: inherit;}
-.widget-content .card-body .card-title{font-size:140%;text-align:center;margin-top:10px}
+.widget-content .card-body .card-title{font-size:140%;text-align:center;margin-top:10px;display:grid;line-height:1.4}
+.widget-content .card-body .card-title small {font-size:1rem;color:var(--bs-dark-text-emphasis);font-weight:400}
 .widget-content .card-body .icon:before{content:'\F470';font-family:'Bootstrap-icons', var(--font-p);font-size:var(--font-size-i);color:#211f1f}
 .widget-content .card-body .icon.Facebook{background:#3b5998}
 .widget-content .card-body .icon.Facebook:before{content:'\F344';color:#fff}
@@ -172,7 +173,7 @@ a{text-decoration:none}
 <b:section id='main Linktree' showaddelement='yes'>
   <b:widget id='LinkList1' locked='true' title='List Linktree' type='LinkList' version='2' visible='true'>
     <b:widget-settings>
-      <b:widget-setting name='text-10'>Spotify</b:widget-setting>
+      <b:widget-setting name='text-10'><![CDATA[Spotify <small>Write a description here</small>]]></b:widget-setting>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
       <b:widget-setting name='link-1'>url_profile</b:widget-setting>
       <b:widget-setting name='link-13'>url_profile</b:widget-setting>
@@ -182,27 +183,27 @@ a{text-decoration:none}
       <b:widget-setting name='link-14'>url_profile</b:widget-setting>
       <b:widget-setting name='link-11'>url_profile</b:widget-setting>
       <b:widget-setting name='link-10'>url_profile</b:widget-setting>
-      <b:widget-setting name='text-9'>Pinterest</b:widget-setting>
+      <b:widget-setting name='text-9'><![CDATA[Pinterest <small>Write a description here</small>]]></b:widget-setting>
       <b:widget-setting name='link-9'>url_profile</b:widget-setting>
-      <b:widget-setting name='text-8'>TikTok</b:widget-setting>
+      <b:widget-setting name='text-8'><![CDATA[TikTok <small>@inputekno | follow me</small>]]></b:widget-setting>
       <b:widget-setting name='link-7'>url_profile</b:widget-setting>
       <b:widget-setting name='link-8'>url_profile</b:widget-setting>
       <b:widget-setting name='link-5'>url_profile</b:widget-setting>
       <b:widget-setting name='link-6'>url_profile</b:widget-setting>
       <b:widget-setting name='link-3'>url_profile</b:widget-setting>
       <b:widget-setting name='link-4'>url_profile</b:widget-setting>
-      <b:widget-setting name='text-1'>Twitter</b:widget-setting>
-      <b:widget-setting name='text-0'>Facebook</b:widget-setting>
-      <b:widget-setting name='text-3'>YouTube</b:widget-setting>
-      <b:widget-setting name='text-2'>Instagram</b:widget-setting>
-      <b:widget-setting name='text-5'>Telegram</b:widget-setting>
-      <b:widget-setting name='text-4'>Github</b:widget-setting>
-      <b:widget-setting name='text-7'>Linkedin</b:widget-setting>
-      <b:widget-setting name='text-6'>Website</b:widget-setting>
-      <b:widget-setting name='text-11'>Signal</b:widget-setting>
-      <b:widget-setting name='text-12'>Playstore</b:widget-setting>
-      <b:widget-setting name='text-13'>Email</b:widget-setting>
-      <b:widget-setting name='text-14'>Default Icon</b:widget-setting>
+      <b:widget-setting name='text-1'><![CDATA[Twitter <small>@inputekno | follow me</small>]]></b:widget-setting>
+      <b:widget-setting name='text-0'><![CDATA[Facebook <small>@inputekno.id | Official Fanspage</small>]]></b:widget-setting>
+      <b:widget-setting name='text-3'><![CDATA[YouTube <small>@inpuTekno | Official Channel</small>]]></b:widget-setting>
+      <b:widget-setting name='text-2'><![CDATA[Instagram <small>@inputekno | follow me</small>]]></b:widget-setting>
+      <b:widget-setting name='text-5'><![CDATA[Telegram <small>@inputekno | Chat with me</small>]]></b:widget-setting>
+      <b:widget-setting name='text-4'><![CDATA[Github <small>My open-source projects</small>]]></b:widget-setting>
+      <b:widget-setting name='text-7'><![CDATA[Linkedin <small>Our profiles</small>]]></b:widget-setting>
+      <b:widget-setting name='text-6'><![CDATA[Website <small>Look at my work!</small>]]></b:widget-setting>
+      <b:widget-setting name='text-11'><![CDATA[Signal <small>Write a description here</small>]]></b:widget-setting>
+      <b:widget-setting name='text-12'><![CDATA[Playstore <small>Install the application</small>]]></b:widget-setting>
+      <b:widget-setting name='text-13'><![CDATA[Email <small>Write a description here</small>]]></b:widget-setting>
+      <b:widget-setting name='text-14'><![CDATA[Default Link <small>Write a description here</small>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
       <b:include name='content'/>
