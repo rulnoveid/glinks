@@ -8,3 +8,4 @@
 ## Do
 
 - Modify Without Remove My Footer Link
+- Allowed to hide footer with css
