@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <b:include name='root'/>
+  <head>
+    <title><data:view.title.escaped/></title>
+    <b:include name='it:head'/>
+    <b:if cond='!data:view.isLayoutMode'>
+      <b:skin><![CDATA[
+        /*!
+         * Name      : Glinks - Linktree Blogger template
+         * Theme URL : https://link.inputekno.com/
+         * Source    : https://github.com/rulnoveid/glinks
+         * Version   : 3.0.0 (grid)
+         * Author    : RulnoveID (https://github.com/rulnoveid)
+         * License   : GPL (https://github.com/rulnoveid/glinks/blob/main/LICENSE)
+         * Copyright : 2023 inputekno. All right reserved
+         *//*
+
+        Default
+        =====================
+        <Variable name="d.favicon" description="HD favicon" type="string" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIt5_FYUJNStREsDjAYk9ztPYZSni5gYaoEr5In_ijCkc1ljOzzpTh6FIuZ8UWMQ_naPcsWMkRHt3Y-Ki8glg1FPpuePA6dkLbAIbs0J-QYSKvx26wYw29mBTYPnvr2SKPTkWpIrLaeUDRcShHN8Po5JknDxu5TpfPcPPsOUSPLOE0ENqek6wskTQGpXY/s192/inputekno.png"/>
+        <Variable name="d.ogImage" description="og:imagen" type="string" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7dSaORbzFjNzNsAsL4UkLkNdYqTggSm2BxgEAylteaU_rCQsdkDB00JGQiehF8cbrdLxyTEhX0ZexKnvYZ0Vn5krxxXHN-9OWkwbKyKdVeAFhUa3Z9FMi75_9VdeFriVXRSvXK8ES4L3-oGJiN81V2v1qXnD1hOO0bFrOTpTEJQ3vCdhN5IU_v83wOU0/s1200/Banner%20Inputekno.png"/>
+
+        General
+        =====================
+		<Variable name="g.animation" description="Enamble Animation" type="string" value="true"/>
+		<Variable name="g.stickyProfile" description="Enamble Sticky" type="string" value="true"/>
+		<Variable name="g.hiddeFooter" description="Hidden Footer" type="string" value="false"/>
+
+*//*! skin.css */
+:root {
+
+  --svg-size : 32px;
+  --svg-stroke : 1.5;
+  --color-svg: currentColor;
+  --color-link: var(--bs-purple);
+
+  --primary: #fafafa;
+  --alternatif-primary: #211F1F;
+  --social-facebook: #3b5998;
+  --social-whatsapp: #25D366;
+  --social-twitter: #1D9BF0;
+  --social-instagram: linear-gradient(45deg, #833ab4, #c13584, #e1306c, #fd1d1d);
+  --social-tiktok: linear-gradient(30deg,#25F4EE,#000000,#FE2C55);
+  --social-telegram: #27A7E7;
+  --social-wechat: #7BB32E;
+  --social-linkedin: #0A66C2;
+  --social-line: #00B900;
+  --social-pinterest: #c8232c;
+  --social-spotify: #1db954;
+  --social-snapchat: #FFFC00;
+  --social-discord: #5865F2;
+  --social-github: #211f1f;
+  --social-youtube: #FF0000;
+  --social-dribbble: #E94C88;
+  --social-medium: #000000cc;
+  --social-paypal: #2997D8;
+  --social-twitch: #6441A4;
+  --social-slack: #4A154B;
+  --social-signal: #237f52;
+  --social-reddit: #FF4500;
+  --social-google-play: #3089AC;
+  --social-envelope: #BB001B;
+  --social-tumblr: #34526f;
+  --social-vk: #4C75A3;
+  --social-threads: #211f1f;
+  --social-quora: #B92B27;
+  --social-zoom: #2d8cff;
+  --social-gitlab: #e78123;
+  --social-stackoverflow: #e78123;
+}
+      ]]></b:skin>
+      <b:else/>
+      <b:template-skin><![CDATA[
+body#layout{position:relative;width:auto;max-width:100%;background-color:#f9f9f9;padding:95px 5px 0;margin:0}
+body#layout:before{content:'Glinks - Theme Linktree Blogger [v3.5.0]';position:absolute;top:0;left:5px;right:5px;height:95px;font-family:Roboto,sans-serif;font-size:23px;color:#0F1618;line-height:95px;text-align:center}
+body#layout:after{content:'Design by InpuTekno.com';display:block;font-family:Roboto,sans-serif;font-size:14px;color:#555;line-height:1;text-align:center;visibility:visible;padding:20px 0}
+body#layout #profile{background-color:#edf4ff!important;overflow:hidden!important;border-color:#cdd4ef}
+body#layout div.section{display:block;background-color:#f1f1f1!important;margin:0 5px 10px!important;padding:16px 16px 18px!important;border-color:#e5e5e5}
+body#layout .section h4{font-size:14px;color:#0F1618;text-transform:uppercase;margin:0}
+body#layout .section h4:after{text-transform:initial;color:#656565;font-weight:400}
+body#layout .add_widget a{color:#3c97ef!important}
+body#layout .widget-wrap3{overflow:hidden}
+body#layout .layout-widget-description{display:none;font-size:11px;line-height:1.2em}
+body#layout .section .widget-content .editlink.icon{background-image:none;left:0;top:0;width:100%;height:100%}
+body#layout .section .locked-widget .widget-content{background-image:url("https://www.gstatic.com/images/icons/material/system_gm/1x/lock_grey600_20dp.png");background-repeat:no-repeat;background-position:center right 10px}body#layout .section .widget-content .layout-title{margin:0 30px 0 0;color:#999}
+body#layout .section .widget-content .layout-title::before{color:#262626;font-weight:500}
+body#layout #profile> h4:after{content:' - Profile Header'}
+body#layout #dark> h4:after{content:' - Toggle-dark'}
+body#layout #main> h4:after{content:' - Default Linktree'}
+	]]></b:template-skin>
+    </b:if>
+    <b:comment>CORE (v3.5.0)</b:comment>
+    <b:defaultmarkups>
+      <b:defaultmarkup type='All'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='AdSense,Blog'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Blog,PopularPosts,FeaturedPost'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='PopularPosts,FeaturedPost'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Blog'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='BlogArchive'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='BlogSearch'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Header'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Label'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='PageList'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Profile'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Subscribe'>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Common'>
+        <b:includable id='@:analytics'>
+          <b:if cond='data:blog.analyticsAccountNumber'>
+            <script async='async' expr:src='params(&quot;https://www.googletagmanager.com/gtag/js&quot;,{id: data:blog.analyticsAccountNumber})'/>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag(&#39;js&#39;, new Date());
+              gtag(&#39;config&#39;,&#39;<data:blog.analyticsAccountNumber/>&#39;);
+            </script>
+          </b:if>
+        </b:includable>
+        <b:includable id='@:meta'>
+          <meta expr:charset='data:blog.encoding'/>
+          <meta content='width=device-width,initial-scale=1' name='viewport'/>
+          <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+          <b:if cond='data:favicon'>
+            <b:loop values='(data:favSizes ?: [32,96,180,192])' var='size'>
+              <link expr:href='resizeImage(data:favicon, data:size, &quot;1:1&quot;)' expr:sizes='data:size + &quot;x&quot; + data:size' rel='icon' type='image/png'/>
+            </b:loop>
+            <b:else/>
+            <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
+          </b:if>
+
+          <meta expr:content='data:view.description.escaped' name='description'/>
+          <b:with value='data:https ? data:view.url.canonical.https : data:view.url.canonical' var='canonical'>
+            <link expr:href='data:canonical' rel='canonical'/>
+            <meta expr:content='data:canonical' property='og:url'/>
+            <meta expr:content='data:canonical' name='twitter:url'/>
+          </b:with>
+          <meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
+          <meta expr:content='data:view.title.escaped' property='og:title'/>
+          <meta expr:content='data:view.description.escaped' property='og:description'/>
+          <b:if cond='data:view.featuredImage or data:ogImage'>
+            <b:with value='resizeImage((data:view.featuredImage ?: (data:ogImage != &quot;&quot; ? data:ogImage : data:widgets.Blog.first.posts.first.featuredImage)), 1200, &quot;1200:630&quot;)' var='image'>
+              <meta expr:content='data:image' property='og:image'/>
+              <meta expr:content='data:image' name='twitter:image'/>
+              <b:if cond='data:image.isResizable'>
+                <meta expr:content='data:image.width' property='og:image:width'/>
+                <meta expr:content='data:image.height' property='og:image:height'/>
+              </b:if>
+            </b:with>
+          </b:if>
+          <meta expr:content='data:cardType ?: &quot;summary_large_image&quot;' name='twitter:card'/>
+          <meta expr:content='data:view.description.escaped' name='twitter:description'/>
+        </b:includable>
+        <b:includable id='root'>
+          <b:attr name='xmlns' value=''/>
+          <b:attr name='xmlns:b' value=''/>
+          <b:attr name='xmlns:data' value=''/>
+          <b:attr name='xmlns:expr' value=''/>
+        </b:includable>
+        <b:includable id='it:head'>
+          <b:include data='{ ogImage: data:skin.vars.d_ogImage, favicon: data:skin.vars.d_favicon }' name='@:meta'/>
+          <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/' rel='preconnect'/>
+          <link href='https://cdn.jsdelivr.net/' rel='dns-prefetch'/>
+          <b:include data='{ get: &quot;css&quot; }' name='it:assets'/>
+          <b:include data='{ get: &quot;main&quot; }' name='it:assets'/>
+          <b:include data='{ get: &quot;redirect&quot; }' name='it:assets'/>
+        </b:includable>
+        
+        
+        <b:includable id='it:assets'>
+          <b:switch var='data:get'>
+            <b:case value='main'/>
+            <style>/*<![CDATA[*/
+                /*!@inputekno/linktree@1.0.0 | Licensed under MIT (https://github.com/rulnoveid/blogger/blob/master/LICENSE) */
+@media screen and (min-width:768px){::-webkit-scrollbar{-webkit-appearance:none;width:4px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:10px}::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.35)}::-webkit-scrollbar-thumb:active{background:rgba(0,0,0,.35)}}
+*,::after,::before{box-sizing:border-box} html{line-height:1.5;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased} body,html{height:100%}*{margin:0}
+a{color:inherit;text-decoration:none} dl, ol, ul {margin-bottom:0;} .dropdown-toggle::after {display:none} .dropdown-menu {font-size:.875rem;padding:.5rem;--bs-dropdown-link-active-bg:var(--color-link)} .dropdown-menu .dropdown-item {border-radius:var(--bs-border-radius)}
+
+/* main css */ .hasImage{width:100%;height:100%;background:rgba(0,0,0,.05);background-size:100%;background-position:center;background-repeat:no-repeat;display:block}.i{width:var(--svg-size,18px);height:var(--svg-size,18px);fill:var(--color-svg)}.wrapper{margin-top:2rem}.wrapper+*{position:relative;margin-top:5rem}.sticky-top{top:-20px;transform:translateY(40px);transition:transform .3s;background:rgba(90,90,90,0.12);backdrop-filter:blur(10px);border-radius:1rem}.cr-footer{flex-direction:column;align-items:center;justify-content:center;text-align:center}.cr-footer a:hover{color:var(--color-link)}
+
+/* header css */ .header{display:flex;align-items:center;justify-content:space-between;padding:15px 35px;--svg-size:20px}.header #profile{flex-grow:1}.header #dark{flex-shrink:0}.top-toggle>*{padding:.5rem}.top-toggle .is-dark .dropdown-menu{--svg-size:16px}.author-profile{align-items:center;gap:.7rem;overflow:hidden}.author-avatar{width:45px;height:45px;flex:0 0 45px;border:1px solid var(--bs-border-color);border-radius:var(--bs-border-radius-pill);overflow:hidden}.author-name{font-size:1.25rem;font-weight:700;display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem}.author-desc{--svg-size:14px;--color-svg:#1d9aef;line-height:1.3}.author-about{opacity:.8}
+
+/* linktree css */ .main-linktree{grid-auto-rows:auto;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));grid-gap:1rem}.main-linktree .card{border-color:transparent;min-height:200px}.main-linktree .card:hover{background:rgba(90,90,90,0.12);border:1px solid hsla(0,0%,87.8%,0);transition:all 0.4s ease-in-out}.card-icon{width:100%;height:94px;border-radius:var(--bs-border-radius);display:flex;align-items:center;justify-content:center;background:#fafafa}.card,.card-icon{transition:all 0.4s ease-in-out}.card:hover .card-icon{transform:scale(1.05)}.card-title{margin:var(--bs-card-title-spacer-y) 0;display:flex;align-items:center;flex-direction:column;flex-wrap:wrap;line-height:1.4;text-transform:capitalize}.card-title>*{font-size:.875rem;color:var(--bs-dark-text-emphasis);font-weight:400;opacity:0.8;text-transform:none}
+
+/* animation css */ .animation >* {opacity:0;animation-name:fadeInUp;animation-duration:1s;animation-fill-mode:both;-webkit-animation-name: fadeInUp;-webkit-animation-duration:1s;-webkit-animation-fill-mode:both} .animation >*:nth-child(3n+1){animation-delay:0.5s;} .animation >*:nth-child(3n+2){animation-delay:1.0s;} .animation >*:nth-child(3n+3){animation-delay:1.5s;}
+@keyframes fadeInUp {from {transform: translate3d(0,40px,0)} to {transform: translate3d(0,0,0);opacity: 1}}
+@-webkit-keyframes fadeInUp {from {transform: translate3d(0,40px,0)} to {transform: translate3d(0,0,0);opacity: 1}}
+
+/* color css */ 
+[data-icon*="facebook"] {background: var(--social-facebook);--color-svg:#fff}
+[data-icon*="whatsapp"] {background: var(--social-whatsapp);--color-svg:#fff}
+[data-icon*="twitter"] {background: var(--social-twitter);--color-svg:#fff}
+[data-icon*="instagram"] {background: var(--social-instagram);--color-svg:#fff}
+[data-icon*="github"] {--color-svg:var(--social-github)}
+[data-icon*="youtube"] {--color-svg:var(--social-youtube)}
+[data-icon*="telegram"] {background: var(--social-telegram);--color-svg:#fff}
+[data-icon*="tiktok"] {background: var(--social-tiktok);background-size:220% 320%;--color-svg:#fff}
+[data-icon*="wechat"] {background: var(--social-wechat);--color-svg:#fff}
+[data-icon*="linkedin"] {background: #fff;--color-svg:var(--social-linkedin)}
+[data-icon*="dribbble"] {background: var(--social-dribbble);}
+[data-icon*="line"] {background: var(--social-line);--color-svg:#fff}
+[data-icon*="medium"] {background: var(--social-medium);--color-svg:#fff}
+[data-icon*="paypal"] {background: var(--social-paypal);--color-svg:#fff}
+[data-icon*="pinterest"] {background: var(--social-pinterest);--color-svg:#fff}
+[data-icon*="snapchat"] {background: var(--social-snapchat)}
+[data-icon*="spotify"] {background: var(--social-spotify);--color-svg:#fff}
+[data-icon*="signal"] {background: var(--social-signal);--color-svg:#fff}
+[data-icon*="twitch"] {background: var(--social-twitch);--color-svg:#fff}
+[data-icon*="slack"] {background: var(--social-slack);--color-svg:#fff}
+[data-icon*="reddit"] {background: var(--social-reddit);--color-svg:#fff}
+[data-icon*="quora"] {background: var(--social-quora);--color-svg:#fff}
+[data-icon*="playstore"] {background: var(--social-google-play);--color-svg:#fff}
+[data-icon*="email"] {background: var(--social-envelope);--color-svg:#fff}
+[data-icon*="zoom"] {--color-svg:var(--social-zoom)}
+[data-icon*="website"] {background: var(--alternatif-primary);--color-svg:#fff}
+[data-icon*="gitlab"] {--color-svg:var(--social-gitlab)}
+[data-icon*="stackoverflow"] {background: var(--social-stackoverflow);--color-svg:#fff}
+
+/*]]>*/
+            </style>
+            <b:case value='css'/>
+            <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' rel='stylesheet'/>
+            <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css' rel='stylesheet'/>
+            
+            <b:case value='inlineCSS'/>
+            <style>.creator { visibility:hidden;height:0 }</style>
+            
+            <b:case value='js'/>
+            <script crossorigin='anonymous' integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js'/>
+    <script crossorigin='anonymous' integrity='sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+' src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js'/>
+            
+            <b:case value='inlineJs'/>
+            <b:if cond='data:skin.vars.g_stickyProfile'>
+              <script>/*<![CDATA[*//* Custom - Sticky Profile | v1.7.0 - https://www.inputekno.com */ function headScroll(){const e=window.pageYOffset||document.documentElement.scrollTop,o=document.querySelector(".header");e>100?(o.classList.add("sticky-top"),document.body.style.paddingTop="0"):(o.classList.remove("sticky-top"),document.body.style.paddingTop="0")}window.addEventListener("scroll",headScroll);/*]]>*/</script>
+            </b:if>
+            
+            <b:case value='redirect'/>
+            <script>/*<![CDATA[*/ var uri = window.location.toString(); if (uri.indexOf("?m=1","?m=1") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri); }; var protocol = window.location.protocol.replace(/\:/g,''); if(protocol == 'http'){ var url = window.location.href.replace('http','https'); window.location.replace(url);} /*]]>*/</script>
+            
+          </b:switch>
+        </b:includable>
+        <b:includable id='i:svg'>
+          <svg expr:class='&quot;i i-&quot; + data:icon' viewBox='0 0 16 16'>
+            <b:class cond='data:class' expr:name='data:class'/>
+            <b:attr cond='data:root' expr:value='data:root' name='class'/>
+            <b:attr cond='data:viewbox' expr:value='data:viewbox' name='viewBox'/>
+            <b:attr expr:value='data:fill' name='fill'/>
+            <b:attr expr:value='data:width' name='width'/>
+            <b:attr expr:value='data:height' name='height'/>
+            <b:switch var='data:icon'>
+              <b:case value='sun-fill'/><path d='M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z'/>
+              <b:case value='moon-fill'/><path d='M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z'/>
+              <b:case value='circle-half'/><path d='M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z'/>
+              <b:case value='badge-check'/><path d='M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z' fill-rule='evenodd'/><path d='m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z'/>
+              <b:case value='link'/><path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'/><path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'/>
+              <b:case value='facebook'/><path d='M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z'/>
+              <b:case value='twitter-x'/><path d='M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z'/>
+              <b:case value='instagram'/><path d='M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z'/>
+              <b:case value='threads'/><path d='M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161Z'/>
+              <b:case value='whatsapp'/><path d='M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z'/>
+              <b:case value='youtube'/><path d='M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z'/>
+              <b:case value='telegram'/><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z'/>
+              <b:case value='tiktok'/><path d='M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z'/>
+              <b:case value='linkedin'/><path d='M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z'/>
+              <b:case value='pinterest'/><path d='M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z'/>
+              <b:case value='github'/><path d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'/>
+              <b:case value='gitlab'/><path d='m15.734 6.1-.022-.058L13.534.358a.568.568 0 0 0-.563-.356.583.583 0 0 0-.328.122.582.582 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.673.673 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.046 4.046 0 0 0 1.34-4.668Z'/>
+              <b:case value='microsoft-teams'/><path d='M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682v.766Zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0Zm-2.238 9.488c-.04 0-.08 0-.12-.002a5.19 5.19 0 0 0 .381-2.07V6.306a1.692 1.692 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.598 2.598 0 0 1-2.598 2.598h-.013Z'/><path d='M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.682.682 0 0 1-.682.682H.682A.682.682 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945h1.363Z'/>
+              <b:case value='paypal'/><path d='M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z'/>
+              <b:case value='spotify'/><path d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z'/>
+              <b:case value='signal'/><path d='m6.08.234.179.727a7.264 7.264 0 0 0-2.01.832l-.383-.643A7.9 7.9 0 0 1 6.079.234zm3.84 0L9.742.96a7.265 7.265 0 0 1 2.01.832l.388-.643A7.957 7.957 0 0 0 9.92.234zm-8.77 3.63a7.944 7.944 0 0 0-.916 2.215l.727.18a7.264 7.264 0 0 1 .832-2.01l-.643-.386zM.75 8a7.3 7.3 0 0 1 .081-1.086L.091 6.8a8 8 0 0 0 0 2.398l.74-.112A7.262 7.262 0 0 1 .75 8zm11.384 6.848-.384-.64a7.23 7.23 0 0 1-2.007.831l.18.728a7.965 7.965 0 0 0 2.211-.919zM15.251 8c0 .364-.028.727-.082 1.086l.74.112a7.966 7.966 0 0 0 0-2.398l-.74.114c.054.36.082.722.082 1.086zm.516 1.918-.728-.18a7.252 7.252 0 0 1-.832 2.012l.643.387a7.933 7.933 0 0 0 .917-2.219zm-6.68 5.25c-.72.11-1.453.11-2.173 0l-.112.742a7.99 7.99 0 0 0 2.396 0l-.112-.741zm4.75-2.868a7.229 7.229 0 0 1-1.537 1.534l.446.605a8.07 8.07 0 0 0 1.695-1.689l-.604-.45zM12.3 2.163c.587.432 1.105.95 1.537 1.537l.604-.45a8.06 8.06 0 0 0-1.69-1.691l-.45.604zM2.163 3.7A7.242 7.242 0 0 1 3.7 2.163l-.45-.604a8.06 8.06 0 0 0-1.691 1.69l.604.45zm12.688.163-.644.387c.377.623.658 1.3.832 2.007l.728-.18a7.931 7.931 0 0 0-.916-2.214zM6.913.831a7.254 7.254 0 0 1 2.172 0l.112-.74a7.985 7.985 0 0 0-2.396 0l.112.74zM2.547 14.64 1 15l.36-1.549-.729-.17-.361 1.548a.75.75 0 0 0 .9.902l1.548-.357-.17-.734zM.786 12.612l.732.168.25-1.073A7.187 7.187 0 0 1 .96 9.74l-.727.18a8 8 0 0 0 .736 1.902l-.184.79zm3.5 1.623-1.073.25.17.731.79-.184c.6.327 1.239.574 1.902.737l.18-.728a7.197 7.197 0 0 1-1.962-.811l-.007.005zM8 1.5a6.502 6.502 0 0 0-6.498 6.502 6.516 6.516 0 0 0 .998 3.455l-.625 2.668L4.54 13.5a6.502 6.502 0 0 0 6.93-11A6.516 6.516 0 0 0 8 1.5'/>
+              <b:case value='twitch'/><path d='M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z'/><path d='M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z'/>
+              <b:case value='medium'/><path d='M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z'/>
+              <b:case value='line'/><path d='M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z'/>
+              <b:case value='snapchat'/><path d='M15.943 11.526c-.111-.303-.323-.465-.564-.599a1.416 1.416 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.387 3.387 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.338.338 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.397 1.397 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.829 1.829 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.294 4.294 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0c-.92 0-1.76.216-2.505.641-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.83 1.83 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.398 1.398 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.38.38 0 0 1 .109.11c.026.053.027.11-.012.217a3.363 3.363 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075.119.125.257.23.409.31a4.43 4.43 0 0 0 1 .4.66.66 0 0 1 .202.09c.118.104.102.26.259.488.079.118.18.22.296.3.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.625.625 0 0 1 .19-.087 4.446 4.446 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047Zm-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082-1.519 0-2.045-.801-2.904-1.084-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a.93.93 0 0 1 .197.022c.396.086.78.285 1.002.338.027.007.054.01.082.011.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.35.35 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a.912.912 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464Z'/>
+              <b:case value='reddit'/><path d='M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z'/><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z'/>
+              <b:case value='quora'/><path d='M8.73 12.476c-.554-1.091-1.204-2.193-2.473-2.193-.242 0-.484.04-.707.142l-.43-.863c.525-.45 1.373-.808 2.464-.808 1.697 0 2.568.818 3.26 1.86.41-.89.605-2.093.605-3.584 0-3.724-1.165-5.636-3.885-5.636-2.68 0-3.839 1.912-3.839 5.636 0 3.704 1.159 5.596 3.84 5.596.425 0 .811-.046 1.166-.15Zm.665 1.3a7.127 7.127 0 0 1-1.83.244C3.994 14.02.5 11.172.5 7.03.5 2.849 3.995 0 7.564 0c3.63 0 7.09 2.828 7.09 7.03 0 2.337-1.09 4.236-2.675 5.464.512.767 1.04 1.277 1.773 1.277.802 0 1.125-.62 1.179-1.105h1.043c.061.647-.262 3.334-3.178 3.334-1.767 0-2.7-1.024-3.4-2.224Z'/>
+              <b:case value='slack'/><path d='M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z'/>
+              <b:case value='dribbble'/><path d='M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z' fill-rule='evenodd'/>
+              <b:case value='google-play'/><path d='M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z'/>
+              <b:case value='wechat'/><path d='M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z'/><path d='M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z'/>
+              <b:case value='envelope-at'/><path d='M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z'/><path d='M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z'/>
+              <b:case value='zoom'/><path d='M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z' fill-rule='evenodd'/>
+              <b:case value='browser-safari'/><path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0Zm0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0ZM4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341Zm6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8Zm12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8ZM2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091Zm6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13ZM9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13ZM3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354Zm9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353ZM1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483Zm-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177Zm12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177ZM3.045 12.944a.299.299 0 0 1-.029-.376l3.898-5.592a.25.25 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.25.25 0 0 1-.062.062l-5.592 3.898a.299.299 0 0 1-.382-.034l-.005-.006Zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176ZM9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176Z'/>
+              <b:case value='stack-overflow'/><path d='M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z'/><path d='M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z'/>
+
+              <b:default/><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>
+            </b:switch>
+          </svg>
+        </b:includable>
+        
+        <b:includable id='post-authorImage'>
+          <b:tag class='hasImage' expr:alt='data:title ? data:title : data:messages.image' name='img'>
+            <b:class cond='data:view.url != data:view.url params { amp: &quot;1&quot; }' name='lazy'/>
+            <b:attr cond='data:view.url == data:view.url' expr:value='resizeImage(data:sourceUrl,20,&quot;1:1&quot;)' name='data-src'/>
+            <b:attr cond='data:view.url == data:view.url' name='src' value='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='/>
+          </b:tag>
+          <noscript><img class='hasImage' expr:alt='data:title ? data:title : data:messages.image' expr:src='resizeImage(data:sourceUrl,20,&quot;1:1&quot;)'/></noscript>
+        </b:includable>
+        
+        <b:includable id='animation-content'>
+          <b:if cond='data:skin.vars.g_animation'>
+            <b:class name='animation'/>
+			<b:class cond='data:widget.sectionId in [&quot;LinkList1&quot;]' expr:name='data:widget.sectionId == &quot;it-linktree-main&quot; ? &quot;d-2&quot; : &quot;d-4&quot;'/>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id='it:icons'>
+          <b:if cond='(data:link.name contains &quot;facebook&quot;) or (data:link.target contains &quot;//facebook.&quot;)  or (data:link.target contains &quot;//fb.&quot;)'>
+            <b:include data='{ icon: &quot;facebook&quot; }' name='i:svg'/>
+
+            <b:elseif cond='(data:link.name contains &quot;instagram&quot;) or (data:link.target contains &quot;//instagram.&quot;)'/>
+            <b:include data='{ icon: &quot;instagram&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;threads&quot;) or (data:link.target contains &quot;//www.threads.&quot;)'/>
+            <b:include data='{ icon: &quot;threads&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;whatsapp&quot;) or (data:link.target contains &quot;//wa.&quot;)'/>
+            <b:include data='{ icon: &quot;whatsapp&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;twitter&quot;) or (data:link.target contains &quot;//twitter.&quot;)'/>
+            <b:include data='{ icon: &quot;twitter-x&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;tiktok&quot;) or (data:link.target contains &quot;//www.tiktok.&quot;)'/>
+            <b:include data='{ icon: &quot;tiktok&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;gitlab&quot;) or (data:link.target contains &quot;gitlab.&quot;)'/>
+            <b:include data='{ icon: &quot;gitlab&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;youtube&quot;) or (data:link.target contains &quot;//www.youtube.&quot;)'/>
+            <b:include data='{ icon: &quot;youtube&quot; }' name='i:svg'/>
+
+            <b:elseif cond='(data:link.name contains &quot;linkedin&quot;) or (data:link.target contains &quot;//www.linkedin.&quot;)'/>
+            <b:include data='{ icon: &quot;linkedin&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;medium&quot;) or (data:link.target contains &quot;//medium.&quot;)'/>
+            <b:include data='{ icon: &quot;medium&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;pinterest&quot;) or (data:link.target contains &quot;pinterest.com&quot;)'/>
+            <b:include data='{ icon: &quot;pinterest&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;paypal&quot;) or (data:link.target contains &quot;paypal.com&quot;) or (data:link.target contains &quot;paypal.me&quot;)'/>
+            <b:include data='{ icon: &quot;paypal&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;github&quot;) or (data:link.target contains &quot;github.com&quot;) or (data:link.target contains &quot;githubusercontent.com&quot;)'/>
+            <b:include data='{ icon: &quot;github&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;twitch&quot;) or (data:link.target contains &quot;//twitch.&quot;)'/>
+            <b:include data='{ icon: &quot;twitch&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;reddit&quot;) or (data:link.target contains &quot;//reddit.&quot;)'/>
+            <b:include data='{ icon: &quot;reddit&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;quora&quot;)'/>
+            <b:include data='{ icon: &quot;quora&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;slack&quot;)'/>
+            <b:include data='{ icon: &quot;slack&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;line&quot;)'/>
+            <b:include data='{ icon: &quot;line&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;telegram&quot;) or (data:link.target contains &quot;//t.&quot;)'/>
+            <b:include data='{ icon: &quot;telegram&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;stackoverflow&quot;) or (data:link.target contains &quot;//stackoverflow.&quot;)'/>
+            <b:include data='{ icon: &quot;stack-overflow&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;wechat&quot;)'/>
+            <b:include data='{ icon: &quot;wechat&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;snapchat&quot;)'/>
+            <b:include data='{ icon: &quot;snapchat&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;playstore&quot;) or (data:link.target contains &quot;play.google.com&quot;)'/>
+            <b:include data='{ icon: &quot;google-play&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;dribbble&quot;) or (data:link.target contains &quot;//dribbble.&quot;)'/>
+            <b:include data='{ icon: &quot;dribbble&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;signal&quot;) or (data:link.target contains &quot;//signal.&quot;)'/>
+            <b:include data='{ icon: &quot;signal&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;email&quot;) or (data:link.target contains &quot;mailto:&quot;)'/>
+            <b:include data='{ icon: &quot;envelope-at&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;zoom&quot;) or (data:link.target contains &quot;zoom.&quot;)'/>
+            <b:include data='{ icon: &quot;zoom&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;website&quot;)'/>
+            <b:include data='{ icon: &quot;browser-safari&quot; }' name='i:svg'/>
+            
+            <b:elseif cond='(data:link.name contains &quot;spotify&quot;) or (data:link.target contains &quot;spotify.com&quot;)'/>
+            <b:include data='{ icon: &quot;spotify&quot; }' name='i:svg'/>
+            
+            
+            <b:else/>
+            <b:include data='{ icon: &quot;link&quot; }' name='i:svg'/>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id='widget-profile'>
+          <b:if cond='data:widget.instanceId == &quot;Image1&quot;'>
+            <div class='author-profile d-flex'>
+              <div class='author-avatar'>
+                <b:include name='post-authorImage'/>
+              </div>
+              <span class='author-desc'>
+                <h3 class='author-name' expr:data-text='data:title'>
+                  <span class='name'><data:title/></span>
+                  <!-- Icon badge -->
+                  <b:include data='{ icon: &quot;badge-check&quot; }' name='i:svg'/>
+                </h3>
+                <span class='author-about'><data:caption/></span>
+              </span>
+            </div>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id='linklist-content'>
+          <b:if cond='data:widget.sectionId == &quot;main&quot;'>
+            <b:tag class='main-linktree d-grid' name='div'>
+              <b:include name='animation-content'/>
+              <b:loop index='i' values='data:links' var='link'>
+                <b:tag class='card social-link' expr:name='data:link.target != &quot;#&quot; ? &quot;a&quot; : &quot;div&quot;'>
+                  <b:attr cond='data:link.target != &quot;#&quot;' expr:value='data:link.target' name='href'/>
+                  <b:attr cond='data:link.target != &quot;#&quot;' name='role' value='button'/>
+                  <b:attr cond='data:link.target != &quot;#&quot;' name='target' value='_blank'/>
+                  <b:attr cond='data:link.target != &quot;#&quot;' name='rel' value='noopener'/>
+
+                  <div class='card-body'>
+                    <div class='card-icon'>
+                      <b:attr expr:value='data:link.name' name='data-icon'/>
+                      <b:include name='it:icons'/>
+                    </div>
+                    <div class='card-title h5'>
+                      <data:link.name/>
+                    </div>
+                  </div>
+
+                </b:tag>
+              </b:loop>
+            </b:tag>
+          </b:if>
+        </b:includable>
+        
+      </b:defaultmarkup>
+    </b:defaultmarkups>
+  </head>
+   <body class='loader it-template'>
+     
+     <div class='it-template container-xxl'>
+       <header class='header wrapper container'>
+         <b:section id='profile' maxwidgets='1' showaddelement='yes'>
+           <b:widget id='Image1' locked='true' title='InpuTekno' type='Image' version='2' visible='true'>
+             <b:widget-settings>
+               <b:widget-setting name='displayUrl'>https://cdn.inputekno.com/icon-inputekno/maskable-android-icon-512x512.png</b:widget-setting>
+               <b:widget-setting name='displayHeight'>150</b:widget-setting>
+               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+               <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+               <b:widget-setting name='displayWidth'>150</b:widget-setting>
+               <b:widget-setting name='link'/>
+               <b:widget-setting name='caption'>Hi. Lets connect and be friends!</b:widget-setting>
+             </b:widget-settings>
+             <b:includable id='main'>
+               <b:include name='content'/>
+             </b:includable>
+             <b:includable id='content'>
+               <b:include name='widget-profile'/>
+             </b:includable>
+           </b:widget>
+         </b:section>
+         <b:section id='dark' maxwidgets='1' showaddelement='false'>
+           <b:widget id='TextList000' locked='true' title='Header Icon' type='TextList' version='2' visible='true'>
+             <b:widget-settings>
+               <b:widget-setting name='shownum'>2</b:widget-setting>
+               <b:widget-setting name='sorting'>NONE</b:widget-setting>
+               <b:widget-setting name='item-0'>Dark Mode</b:widget-setting>
+             </b:widget-settings>
+             <b:includable id='main'>
+               <b:include name='content'/>
+             </b:includable>
+             <b:includable id='content'>
+               <ul class='top-toggle list-unstyled d-flex'>
+                 <b:loop index='icons' values='data:items' var='item'>
+                   <b:if cond='data:icons &lt;= 3'>
+                     <b:if cond='data:item == &quot;Dark Mode&quot;'/>
+                     <b:if cond='data:view.url != data:view.url params { amp: &quot;1&quot; }'>
+                       <li class='dropdown'>
+                         <b:class cond='data:item == &quot;Dark Mode&quot;' name='is-dark'/>
+                         <!--[ Dark mode button ]-->
+                         <label aria-expanded='false' class='theme-toggle dropdown-toggle' data-bs-display='static' data-bs-toggle='dropdown' expr:aria-label='data:item'>
+                           <b:include data='{ icon: &quot;sun-fill&quot; }' name='i:svg'/>
+                           <span class='d-none' id='bd-theme-text'><data:item/></span>
+                         </label>
+                         <ul class='dropdown-menu dropdown-menu-end shadow-sm rounded'>
+                           <label class='titledark px-3 fw-medium' expr:aria-label='data:item'><data:item/></label>
+                           <hr class='dropdown-divider'/>
+                           <li>
+                             <button class='dropdown-item d-flex align-items-center gap-2 active' data-bs-theme-value='light' type='button'>
+                               <b:include data='{ icon: &quot;sun-fill&quot; }' name='i:svg'/>
+                               <span>Light</span>
+                             </button>
+                           </li>
+                           <li>
+                             <button class='dropdown-item d-flex align-items-center gap-2' data-bs-theme-value='dark' type='button'>
+                               <b:include data='{ icon: &quot;moon-fill&quot; }' name='i:svg'/>
+                               <span>Dark</span>
+                             </button>
+                           </li>
+                           <li>
+                             <button class='dropdown-item d-flex align-items-center gap-2' data-bs-theme-value='auto' type='button'>
+                               <b:include data='{ icon: &quot;circle-half&quot; }' name='i:svg'/>
+                               <span>Auto</span>
+                             </button>
+                           </li>
+                         </ul>
+                       </li>
+                     </b:if>
+                   </b:if>
+                 </b:loop>
+               </ul>
+             </b:includable>
+           </b:widget>
+         </b:section>
+       </header>
+       
+       <main class='main wrapper container'>
+        <b:section id='main' showaddelement='yes'>
+          <b:widget id='LinkList1' locked='true' title='List Linktree' type='LinkList' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='text-26'><![CDATA[whatsapp <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-27'><![CDATA[gitlab <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-28'><![CDATA[stackoverflow <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-22'><![CDATA[playstore <small>Install the application</small>]]></b:widget-setting>
+              <b:widget-setting name='text-23'><![CDATA[default Link <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-24'><![CDATA[email <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-25'><![CDATA[zoom <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-9'><![CDATA[linkedin <small>Our profiles</small>]]></b:widget-setting>
+              <b:widget-setting name='text-8'><![CDATA[wechat <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-20'><![CDATA[reddit <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-21'><![CDATA[quora <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-1'><![CDATA[twitter <small>@inputekno | follow me</small>]]></b:widget-setting>
+              <b:widget-setting name='text-0'><![CDATA[facebook <small>@inputekno.id | Official Fanspage</small>]]></b:widget-setting>
+              <b:widget-setting name='text-3'><![CDATA[youtube <small>@inpuTekno | Official Channel</small>]]></b:widget-setting>
+              <b:widget-setting name='text-2'><![CDATA[instagram <small>@inputekno | follow me</small>]]></b:widget-setting>
+              <b:widget-setting name='text-5'><![CDATA[website <small>Look at my work!</small>]]></b:widget-setting>
+              <b:widget-setting name='text-4'><![CDATA[github <small>My open-source projects</small>]]></b:widget-setting>
+              <b:widget-setting name='text-7'><![CDATA[tiktok <small>@inputekno | follow me</small>]]></b:widget-setting>
+              <b:widget-setting name='text-6'><![CDATA[telegram <small>@inputekno | Chat with me</small>]]></b:widget-setting>
+              <b:widget-setting name='text-19'><![CDATA[slack <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-15'><![CDATA[snapchat <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-16'><![CDATA[spotify <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-17'><![CDATA[signal <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-18'><![CDATA[twitch <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-11'><![CDATA[line <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-12'><![CDATA[medium <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-13'><![CDATA[paypal <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-14'><![CDATA[pinterest <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='text-10'><![CDATA[dribbble <small>Write a description here</small>]]></b:widget-setting>
+              <b:widget-setting name='link-17'>#</b:widget-setting>
+              <b:widget-setting name='link-16'>#</b:widget-setting>
+              <b:widget-setting name='link-19'>#</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-18'>#</b:widget-setting>
+              <b:widget-setting name='link-1'>https://go.inputekno.com/twitter</b:widget-setting>
+              <b:widget-setting name='link-13'>#</b:widget-setting>
+              <b:widget-setting name='link-2'>https://go.inputekno.com/instagram</b:widget-setting>
+              <b:widget-setting name='link-12'>#</b:widget-setting>
+              <b:widget-setting name='link-15'>#</b:widget-setting>
+              <b:widget-setting name='link-0'>https://go.inputekno.com/facebook</b:widget-setting>
+              <b:widget-setting name='link-14'>#</b:widget-setting>
+              <b:widget-setting name='link-11'>#</b:widget-setting>
+              <b:widget-setting name='link-10'>#</b:widget-setting>
+              <b:widget-setting name='link-9'>#</b:widget-setting>
+              <b:widget-setting name='link-7'>https://go.inputekno.com/tiktok</b:widget-setting>
+              <b:widget-setting name='link-8'>#</b:widget-setting>
+              <b:widget-setting name='link-5'>https://go.inputekno.com/web</b:widget-setting>
+              <b:widget-setting name='link-6'>#</b:widget-setting>
+              <b:widget-setting name='link-3'>https://go.inputekno.com/youtube</b:widget-setting>
+              <b:widget-setting name='link-4'>https://www.github.com/</b:widget-setting>
+              <b:widget-setting name='link-28'>#</b:widget-setting>
+              <b:widget-setting name='link-27'>#</b:widget-setting>
+              <b:widget-setting name='link-24'>#</b:widget-setting>
+              <b:widget-setting name='link-23'>#</b:widget-setting>
+              <b:widget-setting name='link-26'>#</b:widget-setting>
+              <b:widget-setting name='link-25'>#</b:widget-setting>
+              <b:widget-setting name='link-20'>#</b:widget-setting>
+              <b:widget-setting name='link-22'>#</b:widget-setting>
+              <b:widget-setting name='link-21'>#</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:include name='content'/>
+            </b:includable>
+            <b:includable id='content'>
+              <b:include name='linklist-content'/>
+            </b:includable>
+          </b:widget>
+        </b:section>
+       </main>
+       
+       <footer class='footer wrapper container border-top py-3 py-md-4 px-4 px-md-2'>
+         <div class='footer-copyright d-flex cr-footer flex-wrap'>
+           <small class='credit'>&#169; <span id='getYear'><b:if cond='data:view.url != data:view.url params { amp: &quot;1&quot; }'><script>/*<![CDATA[*/ var d = new Date(); var n = d.getFullYear(); document.getElementById('getYear').innerHTML = n; /*]]>*/</script><b:else/>2023</b:if></span> &#8231; <a expr:href='data:blog.homepageUrl.canonical'><data:blog.title/></a>. All rights reserved.</small>
+         </div>
+       </footer>
+     </div>
+     
+     <b:include data='{ get: &quot;js&quot; }' name='it:assets'/>
+     <b:include data='{ get: &quot;inlineJs&quot; }' name='it:assets'/>
+     
+     <script type='text/javascript'>//<![CDATA[
+/*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors 
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ */
+(()=>{"use strict";let e=()=>localStorage.getItem("theme"),t=e=>localStorage.setItem("theme",e),r=()=>{let t=e();return t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")},a=e=>{"auto"===e&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.setAttribute("data-bs-theme","dark"):document.documentElement.setAttribute("data-bs-theme",e)};a(r());let s=(e,t=!1)=>{let r=document.querySelector(".theme-toggle");if(!r)return;let a=document.querySelector(".titledark"),s=document.querySelector(".theme-toggle svg"),l=document.querySelector(`[data-bs-theme-value="${e}"]`),c=l.querySelector("svg").innerHTML,d=l.querySelector("svg").getAttribute("class");document.querySelectorAll("[data-bs-theme-value]").forEach(e=>{e.classList.remove("active"),e.setAttribute("aria-pressed","false")}),l.classList.add("active"),l.setAttribute("aria-pressed","true"),s.innerHTML=c,s.setAttribute("class",d);let u=`${a.textContent} (${l.dataset.bsThemeValue})`;r.setAttribute("aria-label",u),t&&r.focus()};window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{let t=e();"light"!==t&&"dark"!==t&&a(r())}),window.addEventListener("DOMContentLoaded",()=>{s(r()),document.querySelectorAll("[data-bs-theme-value]").forEach(e=>{e.addEventListener("click",()=>{let r=e.getAttribute("data-bs-theme-value");t(r),a(r),s(r,!0)})})})})();
+/*@shinsenter/defer.js*/ !function(c,i,t){var f,o=/^data-(.+)/,u='IntersectionObserver',r=/p/.test(i.readyState),s=[],a=s.slice,d='lazied',n='load',e='pageshow',l='forEach',m='hasAttribute',h='shift';function p(e){i.head.appendChild(e)}function v(e,n){a.call(e.attributes)[l](n)}function y(e,n,t,o){return o=(o=n?i.getElementById(n):o)||i.createElement(e),n&&(o.id=n),t&&(o.onload=t),o}function b(e,n){return a.call((n||i).querySelectorAll(e))}function g(t,e){b('source',t)[l](g),v(t,function(e,n){(n=o.exec(e.name))&&(t[n[1]]=e.value)}),e&&(t.className+=' '+e),n in t&&t[n]()}function I(e){f(function(o){o=b(e||'[type=deferjs]'),function e(n,t){(n=o[h]())&&(n.parentNode.removeChild(n),(t=y(n.nodeName)).text=n.text,v(n,function(e){'type'!=e.name&&(t[e.name]=e.value)}),t.src&&!t[m]('async')?(t.onload=t.onerror=e,p(t)):(p(t),e()))}()})}(f=function(e,n){r?t(e,n):s.push(e,n)}).all=I,f.js=function(n,t,e,o){f(function(e){(e=y('SCRIPT',t,o)).src=n,p(e)},e)},f.css=function(n,t,e,o){f(function(e){(e=y('LINK',t,o)).rel='stylesheet',e.href=n,p(e)},e)},f.dom=function(e,n,t,o,i){function r(e){o&&!1===o(e)||g(e,t)}f(function(t){t=u in c&&new c[u](function(e){e[l](function(e,n){e.isIntersecting&&(n=e.target)&&(t.unobserve(n),r(n))})},i),b(e||'[data-src]')[l](function(e){e[m](d)||(e.setAttribute(d,''),t?t.observe(e):r(e))})},n)},f.reveal=g,c.Defer=f,c.addEventListener('on'+e in c?e:n,function(){for(I();s[0];t(s[h](),s[h]()))r=1})}(this,document,setTimeout),function(e,n){e.defer=n=e.Defer,e.deferscript=n.js,e.deferstyle=n.css,e.deferimg=e.deferiframe=n.dom}(this);
+Defer.dom('.lazy', 100, 'loaded', null, {rootMargin:'1px'}),'undefined'!=typeof infinite_scroll&&infinite_scroll.on('load',function(){Defer.dom('.lazy', 100, 'loaded', null, {rootMargin:'1px'}) }); {let e=document.querySelector(".cr-footer"),t=document.createElement("small");t.setAttribute("class","creator"),t.textContent="Created by ",e.appendChild(t);let r=document.createElement("a");r.setAttribute("class","it"),r.href="//www.inputekno.com",r.target="_blank",r.text="InpuTekno",r.rel="noopener",r.title="InpuTekno",document.querySelector(".creator").appendChild(r)}; "use strict";$(document).ready(function(){var e,t,r;e=window,t=document,(r=$("footer > .cr-footer > .creator > a.it")).length?(e.validurlit=function(e){return/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/.test(e)},e.sUp=function(e){t.querySelector(e).parentNode.style.height="0"},e._GET=function(e,t){t||(t=location.href);var r=RegExp("[\\?&]"+(e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]"))+"=([^&#]*)").exec(t);return null==r?null:r[1]},r.attr("href","//www.inputekno.com").text("InpuTekno")):location.href="//www.inputekno.com"});
+//]]></script>
+     
+  &lt;textarea id=&quot;bjs&quot; readonly hidden&gt;</body>&lt;/textarea&gt;
+  <script>document.getElementById(&#39;bjs&#39;).remove(), document.body.lastElementChild.remove()</script>&lt;/body&gt;
+</html>
